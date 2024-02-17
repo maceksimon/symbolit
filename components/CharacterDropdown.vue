@@ -12,14 +12,14 @@ import type { mergeProps } from 'vue';
     <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95"
       enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75"
       leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-      <MenuItems v-if="characterAliases.length"
+      <MenuItems v-if="symbolArray.length"
         class="absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-        <div v-for="alias in characterAliases" :key="alias" class="py-1">
-          <MenuItem v-slot="{ active }">
-          <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']"
-            @click="onClickAlias(alias)">
-            {{ alias }}
-          </a>
+        <div v-for="alias in symbolArray" :key="alias" class="py-1">
+          <MenuItem v-if="alias" v-slot="{ active }">
+            <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']"
+              @click="onClickAlias(alias)">
+              {{ alias }}
+            </a>
           </MenuItem>
         </div>
       </MenuItems>
@@ -43,13 +43,10 @@ const props = defineProps({
   }
 })
 
-const characterAliases = computed(() => {
-  switch (props.character) {
-    case 'A':
-      return ['𝐀', '𝐴', '𝑨', '𝒜', '𝓐', '𝔄', '𝔸']
-    default:
-      return []
-  }
+const { getSymbolArray } = useSymbol()
+
+const symbolArray = computed(() => {
+  return getSymbolArray(props.character)
 })
 
 const onClickAlias = (alias: string) => {
