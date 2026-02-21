@@ -954,29 +954,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/cascade-layer-name-parser@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@csstools/cascade-layer-name-parser@npm:2.0.4"
+"@csstools/cascade-layer-name-parser@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@csstools/cascade-layer-name-parser@npm:3.0.0"
   peerDependencies:
-    "@csstools/css-parser-algorithms": ^3.0.4
-    "@csstools/css-tokenizer": ^3.0.3
-  checksum: 10c0/774f2bcc96a576183853191bdfd31df15e22c51901ee01678ee47f1d1afcb4ab0e6d9a78e08f7383ac089c7e0b390013633f45ff1f1d577c9aefd252589bcced
+    "@csstools/css-parser-algorithms": ^4.0.0
+    "@csstools/css-tokenizer": ^4.0.0
+  checksum: 10c0/657b325261dfa567e26b56a1a6a00fcfc877b9e95ce8ae3595ec95c89323fc2123dad7a4ca79bede8dec475ccc41d9d528470b0be01c4f22104f6962f2bfb40c
   languageName: node
   linkType: hard
 
-"@csstools/css-parser-algorithms@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@csstools/css-parser-algorithms@npm:3.0.4"
+"@csstools/css-parser-algorithms@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@csstools/css-parser-algorithms@npm:4.0.0"
   peerDependencies:
-    "@csstools/css-tokenizer": ^3.0.3
-  checksum: 10c0/d411f07765e14eede17bccc6bd4f90ff303694df09aabfede3fd104b2dfacfd4fe3697cd25ddad14684c850328f3f9420ebfa9f78380892492974db24ae47dbd
+    "@csstools/css-tokenizer": ^4.0.0
+  checksum: 10c0/94558c2428d6ef0ddef542e86e0a8376aa1263a12a59770abb13ba50d7b83086822c75433f32aa2e7fef00555e1cc88292f9ca5bce79aed232bb3fed73b1528d
   languageName: node
   linkType: hard
 
-"@csstools/css-tokenizer@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@csstools/css-tokenizer@npm:3.0.3"
-  checksum: 10c0/c31bf410e1244b942e71798e37c54639d040cb59e0121b21712b40015fced2b0fb1ffe588434c5f8923c9cd0017cfc1c1c8f3921abc94c96edf471aac2eba5e5
+"@csstools/css-tokenizer@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@csstools/css-tokenizer@npm:4.0.0"
+  checksum: 10c0/669cf3d0f9c8e1ffdf8c9955ad8beba0c8cfe03197fe29a4fcbd9ee6f7a18856cfa42c62670021a75183d9ab37f5d14a866e6a9df753a6c07f59e36797a9ea9f
   languageName: node
   linkType: hard
 
@@ -998,12 +998,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/utilities@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@csstools/utilities@npm:2.0.0"
+"@csstools/utilities@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@csstools/utilities@npm:3.0.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10c0/be5c31437b726928f64cd4bb3e47f5b90bfd2e2a69a8eaabd8e89cc6c0977e4f0f7ee48de50c8ed8b07e04e3956a02293247e0da3236d521fb2e836f88f65822
+  checksum: 10c0/65b6f6aa4ea899777bea710aab5f17028aa5e1aa41f7fe892c2e916b188da2b929c76be643d4a5d8d9ca5a7853df94f05c0247dd6b63540b360055d36db3104f
   languageName: node
   linkType: hard
 
@@ -7287,7 +7287,7 @@ __metadata:
     "@nuxtjs/tailwindcss": "npm:^6.11.4"
     "@vueuse/nuxt": "npm:^12.0.0"
     nuxt: "npm:^3.10.1"
-    postcss-custom-properties: "npm:^14.0.0"
+    postcss-custom-properties: "npm:^15.0.0"
     vue: "npm:^3.4.15"
     vue-router: "npm:^4.2.5"
   languageName: unknown
@@ -7859,18 +7859,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^14.0.0":
-  version: 14.0.4
-  resolution: "postcss-custom-properties@npm:14.0.4"
+"postcss-custom-properties@npm:^15.0.0":
+  version: 15.0.1
+  resolution: "postcss-custom-properties@npm:15.0.1"
   dependencies:
-    "@csstools/cascade-layer-name-parser": "npm:^2.0.4"
-    "@csstools/css-parser-algorithms": "npm:^3.0.4"
-    "@csstools/css-tokenizer": "npm:^3.0.3"
-    "@csstools/utilities": "npm:^2.0.0"
+    "@csstools/cascade-layer-name-parser": "npm:^3.0.0"
+    "@csstools/css-parser-algorithms": "npm:^4.0.0"
+    "@csstools/css-tokenizer": "npm:^4.0.0"
+    "@csstools/utilities": "npm:^3.0.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10c0/5b101ee71289657cc2e5a16f4912009c10441052e2c54bd9e4f3d4d72b652bab56adb662ddaa96881413e375cf9852e2159b3c778d953442ce86efb781c3b2bf
+  checksum: 10c0/c96d41d6b16697aad214dfac0dac8d8f77763417012f7478ee667139f639f59a65401f320578e5502e1fab15022ef43cba44d80043ddf8b5ade8a77e7fa4df29
   languageName: node
   linkType: hard
 
